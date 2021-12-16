@@ -1,17 +1,15 @@
 import tkinter as tk
-
-
 win = tk.Tk()
 win.resizable(0, 0)
 win.title("PY Calculator")
 win.geometry("380x597")
 win.config(bg='#A7C7E7')
-label = tk.Label(win, text="PY Calculator", bg="#A7C7E7", fg='#1F51FF')
+label = tk.Label(win, text="PY Calculator", bg="#A7C7E7", fg='white')
 label.config(font=('Verdana 14 bold'))
 label.pack()
 frame2 = tk.Frame(win,height=100).pack(side='top',fill='both')
 input_text = tk.StringVar()
-entry = tk.Entry(frame2,justify='right', font=('Verdana', 30, 'bold'), textvariable=input_text, width=15,bg="#eee", bd=0)
+entry = tk.Entry(frame2,justify='right', font=('Verdana', 30, 'bold'), textvariable=input_text, width=15,bg="#eee", bd=0,fg = '#4682B4')
 entry.place(x=10, y=50)
 entry.pack()
 def bt_clear():
